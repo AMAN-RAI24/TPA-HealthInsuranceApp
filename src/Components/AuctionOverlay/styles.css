@@ -1,0 +1,21 @@
+.overlay {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  min-height: 150%;
+  top: 100px;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.overlay .offer-section {
+  width: 700px;
+  max-width: 100%;
+}
+.offer-section .offer-action {
+  display: flex;
+  justify-content: end;
+}

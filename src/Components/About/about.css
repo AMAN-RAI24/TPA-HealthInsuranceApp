@@ -1,0 +1,97 @@
+.about-us-container {
+  width: 100%;
+  min-height: 90vh;
+}
+.about-us-container .data-section {
+  padding: 20px;
+  width: 100%;
+  background-color: #880e4f;
+  /* min-height: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.about-us-container .data-section .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-container .data-section .image,
+.about-us-container .data-section .data {
+  flex: 1;
+  flex-basis: 450px;
+  max-width: 100%;
+  margin: 30px;
+}
+.about-us-container .data-section .image img {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.about-us-container .data-section .data .question-heading {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+.about-us-container .data-section .data .explanation {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+.about-us-cards-container {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  padding: 0%;
+  flex-wrap: wrap;
+  padding: 0 2%;
+  overflow: hidden;
+}
+.about-us-cards-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 400px;
+  max-width: 100%;
+  flex-grow: 1;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  margin: 2%;
+  opacity: 0;
+  transition: opacity 0.2s linear, transform 0.3s linear 0.2s;
+}
+.about-us-cards-container .card:nth-of-type(even) {
+  transform: translateX(100vw);
+}
+.about-us-cards-container .card:nth-of-type(odd) {
+  transform: translateX(-100vw);
+}
+.about-us-cards-container .card.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+.card h2 {
+  margin-left: 20px;
+}
+.check-icon-about-us {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-points-about-us {
+  /* margin-left: 20px; */
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}

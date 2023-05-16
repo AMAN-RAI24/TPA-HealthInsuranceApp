@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap");
+
+.home-page {
+  width: 100%;
+}
+.home-page .banner {
+  width: 100%;
+  min-height: 700px;
+  background-color: #880e4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.home-page .banner .info-section {
+  width: 600px;
+  flex-grow: 1;
+  padding: 0 50px;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+}
+.home-page .banner .info-section h1 {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.home-page .banner .info-section p {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  /* font-family: "Fredoka One", cursive; */
+}
+.home-page .banner .display-section {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 400px;
+}
+.home-page .banner .display-section .meditate {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+.home-page .banner .display-section .heart {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  animation: heart-beat 2s ease-in-out infinite;
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(40px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  /* #6C63FF */
+}
+.features-container {
+  width: 100%;
+  padding: 0 5%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 75px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 186, 234, 1) 10%,
+    rgba(197, 245, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(244, 186, 234, 1) 39%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(197, 245, 255, 1) 59%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(244, 186, 234, 1) 80%,
+    rgba(197, 245, 255, 1) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.features-container .features-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.features-container .features .feature {
+  width: 400px;
+  max-width: 500px;
+  flex-grow: 1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2); */
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: opacity 0.1s linear, transform 0.5s linear 0.1s;
+}
+.features-container .features .feature:nth-of-type(even) {
+  transform: translateX(-100vw);
+}
+.features-container .features .feature:nth-of-type(odd) {
+  transform: translateX(100vw);
+}
+.features-container .features .feature.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+.features-container .features .feature * {
+  max-width: 100%;
+  flex-grow: 1;
+}
+.features-container .features .feature .feature-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+.features-container h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-align: center;
+  /* font-family: "Fredoka One", cursive; */
+}
+.features-container .features .feature .feature-details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.features-container .features .feature .feature-details h2 {
+  text-align: center;
+  font-size: 32px;
+}
+.features-container .features .feature .feature-details p {
+  font-size: 26px;
+  text-align: center;
+}
+
+@media screen and (max-width: 756px) {
+  .features-container {
+    width: 98%;
+  }
+  .home-page .banner {
+    flex-direction: row-reverse;
+  }
+  .home-page .banner .display-section {
+    margin-top: 30px;
+  }
+  .home-page .banner .info-section {
+    width: auto;
+    padding: 0 10px;
+    margin: 0;
+    color: white;
+  }
+}
+
+/* body::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 50%;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #880e4f;
+   outline: 1px solid slategrey; 
+} 
+ */
+
+.features-1 {
+  display: flex;
+  flex-direction: column;
+}
+.features-container .feature-slab {
+  width: 1400px;
+  max-width: 100%;
+  margin: auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  opacity: 0;
+  transition: opacity 0.1s linear, transform 0.5s linear 0.1s;
+}
+.features-container .features-1 .feature-slab:nth-of-type(even) {
+  transform: translateX(-100vw);
+  flex-direction: row-reverse;
+}
+.features-container .features-1 .feature-slab:nth-of-type(odd) {
+  transform: translateX(100vw);
+}
+.features-container .features-1 .feature-slab.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+.features-1 .feature-slab .feature-image {
+  /* background-color: black; */
+  flex-grow: 1;
+}
+.features-1 .feature-slab .feature-details {
+  flex-grow: 2;
+  margin: auto 50px;
+}
+.feature-slab .feature-image img {
+  height: 400px;
+  width: 500px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.feature-slab .feature-details {
+  width: 500px;
+  max-width: 100%;
+  flex-grow: 1;
+}
+.feature-slab .feature-details h2 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+}
+.feature-slab .feature-details p {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+}
+.buttons {
+  display: flex;
+}
+.buttons Button {
+  margin: 10px;
+  color: black;
+  background-color: rgb(243, 235, 235);
+  box-shadow: 4px 4px #888888;
+}
+.buttons Button:hover {
+  background-color: rgb(173, 173, 240);
+  /* //opacity {0.9, 0.8, 0.7} */
+}

@@ -1,0 +1,47 @@
+.admin-container {
+  width: 100%;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+.admin-container h1 {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+}
+.policies-container {
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.policies-container .policy {
+  width: 350px;
+  flex-grow: 1;
+  margin: 30px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.policies-container .policy button {
+  padding: 1rem 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+.approve {
+  background-color: #388e3c;
+}
+.reject {
+  background-color: #d32f2f;
+}

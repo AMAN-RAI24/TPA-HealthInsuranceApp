@@ -1,0 +1,33 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;   
+}
+.info-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    @media (max-width: 600px) {
+        flex-direction: column;
+      }  
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+    color: rgb(94, 82, 82) !important;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+      }  
+}
+.second-row{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    @media (max-width: 600px) {
+        flex-direction: column;
+      } 
+}

@@ -1,0 +1,18 @@
+.form-header h2 {
+  text-align: center;
+}
+.circle {
+  margin: auto;
+  width: 200px;
+  /* height: 200px; */
+  border-radius: 50%;
+  /* background-color: #2196f3; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle img {
+  object-fit: contain;
+  width: 100%;
+}

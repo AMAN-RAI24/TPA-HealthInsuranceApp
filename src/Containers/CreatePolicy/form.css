@@ -1,0 +1,28 @@
+.form-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.form-fields > .MuiTextField-root {
+  box-sizing: content-box;
+  min-width: 300px;
+  margin: 0px 5px;
+  width: auto;
+  flex-grow: 1;
+}
+
+.form-fields > .MuiTextField-root {
+  margin: 10px;
+}
+.sub-section {
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .form-fields > .MuiTextField-root {
+    margin: 10px 0px;
+  }
+}

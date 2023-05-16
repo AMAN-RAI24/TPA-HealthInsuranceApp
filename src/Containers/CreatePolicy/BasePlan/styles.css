@@ -1,0 +1,30 @@
+.base-plan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.base-plan-container .base-plan {
+  min-width: 300px;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.base-plan input {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.base-plan.selected {
+  border: 2px solid #e91e63;
+}

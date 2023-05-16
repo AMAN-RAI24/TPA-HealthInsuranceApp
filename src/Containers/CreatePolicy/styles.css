@@ -1,0 +1,131 @@
+.create-policy-container {
+  width: 100%;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+.create-policy-container .section-container {
+  width: 800px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+.create-policy-container .form-container {
+  width: 100%;
+  margin: 100px 0;
+  position: relative;
+}
+.section-header {
+  margin-top: 10px;
+  color: #e91e63;
+}
+.section-container .progress-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.progress-container .steps {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #e91e63;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.progress-container .steps:hover {
+  opacity: 0.9;
+}
+
+.progress-container .steps.current-step {
+  background-color: #880e4f;
+}
+
+.form-container .form-image {
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  border: 1px solid #e91e63;
+  background-color: #e91e63;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: translateY(-50%);
+  background-size: contain;
+}
+.form-container .form-image img {
+  width: 100%;
+}
+.form-container .form-heading {
+  color: #e91e63;
+}
+.create-policy-error-section {
+  width: 95%;
+  /* border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 0 40px;
+  background-color: red;
+  opacity: 0.6;
+  margin: auto; */
+  /* box-shadow: 0 0 3px 3px rgb(0, 0, 0, 0.2); */
+  margin: 10px;
+}
+.create-policy-error-section .error {
+  color: red;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .form-container .form-image {
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .form-container .form-heading {
+    margin: 70px;
+  }
+}
+.form-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.form-fields > .MuiTextFnpmield-root {
+  box-sizing: content-box;
+  min-width: 300px;
+  margin: 0px 5px;
+  width: auto;
+  flex-grow: 1;
+}
+
+.form-fields > .MuiTextField-root {
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .form-fields > .MuiTextField-root {
+    margin: 10px 0px;
+  }
+}
+
+.form-actions {
+  padding: 10px;
+  display: flex;
+}
+.form-actions .form-btn {
+  padding: 1rem 3rem;
+}
+.form-btn.next {
+  margin-left: auto;
+}
